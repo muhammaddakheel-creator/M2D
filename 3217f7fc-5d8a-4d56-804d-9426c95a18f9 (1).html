@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الملابس - أحدث صيحات الموضة</title>
+    <meta name="description" content="اكتشف أحدث صيحات الموضة والملابس العصرية في متجرنا الإلكتروني. تشكيلة واسعة من الملابس للرجال والنساء والأطفال">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6",
+                        secondary: "#1E40AF",
+                        accent: "#F59E0B",
+                        light: "#F3F4F6",
+                        dark: "#1F2937"
+                    },
+                    fontFamily: {
+                        'arabic': ['Cairo', 'Tahoma', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-light font-arabic">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary">مود ستايل</a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="#" class="text-dark hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-dark hover:text-primary transition-colors">الرجال</a>
+                    <a href="#" class="text-dark hover:text-primary transition-colors">النساء</a>
+                    <a href="#" class="text-dark hover:text-primary transition-colors">الأطفال</a>
+                    <a href="#" class="text-dark hover:text-primary transition-colors">عروض</a>
+                    <a href="#" class="text-dark hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- Right Side Icons -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="p-2 text-dark hover:text-primary">
+                        <i class="fas fa-search text-lg"></i>
+                    </button>
+                    <button class="p-2 text-dark hover:text-primary">
+                        <i class="fas fa-user text-lg"></i>
+                    </button>
+                    <button class="p-2 text-dark hover:text-primary relative">
+                        <i class="fas fa-shopping-cart text-lg"></i>
+                        <span class="absolute -top-1 -left-1 bg-accent text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="md:hidden p-2 text-dark">
+                        <i class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-l from-primary to-secondary text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">اكتشف أناقتك مع أحدث صيحات الموضة</h1>
+                    <p class="text-lg mb-6">تشكيلة واسعة من الملابس العصرية والأنيقة تناسب جميع الأذواق والمناسبات</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <button class="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
+                            تسوق الآن
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                            اكتشف المزيد
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img 
+                        src="https://picsum.photos/600/400?random=1" 
+                        alt="عرض أزياء حديثة" 
+                        class="w-full rounded-lg shadow-xl"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">فئات المنتجات</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Men's Category -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img 
+                        src="https://picsum.photos/400/300?random=2" 
+                        alt="ملابس رجالية" 
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                        loading="lazy"
+                    />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">ملابس رجالية</h3>
+                    </div>
+                </div>
+
+                <!-- Women's Category -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img 
+                        src="https://picsum.photos/400/300?random=3" 
+                        alt="ملابس نسائية" 
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                        loading="lazy"
+                    />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">ملابس نسائية</h3>
+                    </div>
+                </div>
+
+                <!-- Kids Category -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img 
+                        src="https://picsum.photos/400/300?random=4" 
+                        alt="ملابس أطفال" 
+                        class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                        loading="lazy"
+                    />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">ملابس أطفال</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-dark mb-12">منتجات مميزة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/300/300?random=5" 
+                            alt="تيشيرت رجالي" 
+                            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                        />
+                        <div class="absolute top-2 left-2 bg-accent text-white px-2 py-1 text-sm rounded">
+                            جديد
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-dark mb-2">تيشيرت رجالي قطني</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-primary font-bold">120 ر.س</span>
+                            <span class="text-gray-400 line-through text-sm">150 ر.س</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition-colors">
+                            أضف إلى السلة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/300/300?random=6" 
+                            alt="فستان نسائي" 
+                            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-dark mb-2">فستان أنيق للنساء</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-primary font-bold">250 ر.س</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition-colors">
+                            أضف إلى السلة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/300/300?random=7" 
+                            alt="جينز رجالي" 
+                            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                        />
+                        <div class="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-sm rounded">
+                            خصم 20%
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-dark mb-2">جينز رجالي مريح</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-primary font-bold">180 ر.س</span>
+                            <span class="text-gray-400 line-through text-sm">225 ر.س</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition-colors">
+                            أضف إلى السلة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <img 
+                            src="https://picsum.photos/300/300?random=8" 
+                            alt="ملابس أطفال" 
+                            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-dark mb-2">ملابس أطفال قطنية</h3>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-primary font-bold">80 ر.س</span>
+                        </div>
+                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-secondary transition-colors">
+                            أضف إلى السلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">اشترك في نشرتنا الإخبارية</h2>
+            <p class="text-lg mb-8">كن أول من يعرف عن العروض الجديدة والمنتجات الحصرية</p>
+            <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                <input 
+                    type="email" 
+                    placeholder="بريدك الإلكتروني" 
+                    class="flex-1 px-4 py-3 rounded-lg text-dark focus:outline-none focus:ring-2 focus:ring-accent"
+                >
+                <button class="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors">
+                    اشتراك
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">مود ستايل</h3>
+                    <p class="text-gray-300 mb-4">متجرك الأول للملابس العصرية والأنيقة بأسعار مناسبة للجميع</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">الرئيسية</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">منتجاتنا</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">عروض خاصة</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">عن المتجر</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">الفئات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">ملابس رجالية</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">ملابس نسائية</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">ملابس أطفال</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">إكسسوارات</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">أحذية</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">معلومات الاتصال</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt ml-2"></i> الرياض، المملكة العربية السعودية</p>
+                        <p><i class="fas fa-phone ml-2"></i> +966 12 345 6789</p>
+                        <p><i class="fas fa-envelope ml-2"></i> info@modstyle.com</p>
+                        <p><i class="fas fa-clock ml-2"></i> الأحد - الخميس: 9ص - 6م</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2024 مود ستايل. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Define products data
+        const products = [
+            {
+                "id": 1,
+                "name": "تيشيرت رجالي قطني",
+                "price": 120,
+                "oldPrice": 150,
+                "image": "https://picsum.photos/300/300?random=5",
+                "badge": "جديد"
+            },
+            {
+                "id": 2,
+                "name": "فستان أنيق للنساء",
+                "price": 250,
+                "oldPrice": null,
+                "image": "https://picsum.photos/300/300?random=6",
+                "badge": null
+            },
+            {
+                "id": 3,
+                "name": "جينز رجالي مريح",
+                "price": 180,
+                "oldPrice": 225,
+                "image": "https://picsum.photos/300/300?random=7",
+                "badge": "خصم 20%"
+            },
+            {
+                "id": 4,
+                "name": "ملابس أطفال قطنية",
+                "price": 80,
+                "oldPrice": null,
+                "image": "https://picsum.photos/300/300?random=8",
+                "badge": null
+            }
+        ];
+
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prevent default anchor behavior
+            const links = document.querySelectorAll('a[href="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                });
+            });
+
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('button:contains("أضف إلى السلة")');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productCard = this.closest('.bg-white');
+                    const productName = productCard.querySelector('h3').textContent;
+                    alert(`تم إضافة ${productName} إلى سلة التسوق`);
+                });
+            });
+
+            // Newsletter subscription
+            const newsletterForm = document.querySelector('input[type="email"]').closest('div');
+            const subscribeButton = newsletterForm.querySelector('button');
+            
+            subscribeButton.addEventListener('click', function() {
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                if (emailInput.value && emailInput.value.includes('@')) {
+                    alert('شكراً لك على الاشتراك في نشرتنا الإخبارية!');
+                    emailInput.value = '';
+                } else {
+                    alert('يرجى إدخال بريد إلكتروني صحيح');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
